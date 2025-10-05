@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
+ UserOutlined,
   VideoCameraOutlined,
   PlusOutlined,
   UnorderedListOutlined,
@@ -58,7 +57,7 @@ const SiteBar = ({ collapsed }) => {
             },
             {
               key: 'orders',
-              icon: <UploadOutlined />,
+              
               label: <Link to="/dashboard/order" className='text-decoration-none'>Orders</Link>,
             },
           ]}
