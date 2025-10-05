@@ -133,7 +133,6 @@
 
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import React, { useState } from 'react'
-import { auth, firestore } from '../../config/firebase'
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore'
 import { Button, Col, Form, Input, Row, Typography } from 'antd'
 import { Link } from 'react-router-dom'

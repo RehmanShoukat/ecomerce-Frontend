@@ -3,7 +3,6 @@ import { Form, Input, Button, Typography, Row, Col } from 'antd'
 import { Link, useNavigate } from 'react-router-dom'
 import bgImage from '../../assets/Auth.jpeg' // <-- your image path
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { auth, firestore } from '../../config/firebase'
 import { doc, getDoc } from 'firebase/firestore'
 
 const { Title } = Typography

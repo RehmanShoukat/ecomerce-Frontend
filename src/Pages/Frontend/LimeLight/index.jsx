@@ -16,7 +16,6 @@ import OrderModal from '../../../components/OrderModel'
 import { Link } from 'react-router-dom'
 import { Spin } from 'antd'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-import { firestore } from '../../../config/firebase'
 
 
 

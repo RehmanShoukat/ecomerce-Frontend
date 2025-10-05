@@ -4,7 +4,6 @@ import OrderModal from '../../../components/OrderModel'
 import { TbShoppingBagPlus } from 'react-icons/tb'
 import { Spin } from 'antd'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-import { firestore } from '../../../config/firebase'
 
 
 

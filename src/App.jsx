@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Card, Spin } from 'antd';
 import OrderModal from './components/OrderModel';
-import { useAuthContext } from './context/AuthContext';
 import ScreenLoader from './components/ScreenLoader';
 
 
@@ -21,14 +20,15 @@ function App() {
     });
   }, []);
 
-  const {isAppLoading} = useAuthContext()
+  // const {isAppLoading} = useAuthContext()
   return (
     <>
-      {isAppLoading
+      {/* {isAppLoading
       ? <div style={{height: "100vh" , display: "flex" , justifyContent : "center" , alignItems : "center" , backgroundColor: "#222"}}>
         <Spin size='large' tip="Loading..."/>
       </div>
-    : <Routes />}
+    : <Routes />} */}
+    <Routes />
     </>
   )
 }

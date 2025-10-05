@@ -5,7 +5,6 @@ import BgVideo from "../../../assets/child/video.mp4"
 import { TbShoppingBagPlus } from 'react-icons/tb'
 import OrderModal from '../../../components/OrderModel'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-import { firestore } from '../../../config/firebase'
 import { Spin } from 'antd'
 
 

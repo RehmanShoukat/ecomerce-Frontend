@@ -1,11 +1,10 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuthContext } from '../context/AuthContext';
 import { Spin } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
 
 const AdminRoute = ({ Component }) => {
-  const { isAuth, isAdmin, isAppLoading } = useAuthContext();
+  // const { isAuth, isAdmin, isAppLoading } = useAuthContext();
 
   if (isAppLoading) {
     return (

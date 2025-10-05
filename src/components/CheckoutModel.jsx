@@ -1,8 +1,6 @@
 import { doc, setDoc } from 'firebase/firestore';
 import React, { useState } from 'react';
-import { firestore } from '../config/firebase';
 import { useCartContext } from '../context/CartContext';
-import { useAuthContext } from '../context/AuthContext';
 import { loadStripe } from "@stripe/stripe-js";
 import { Button } from 'antd';
 

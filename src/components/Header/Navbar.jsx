@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import Logo from "../../assets/Logo.png";
 import { FaSearch } from 'react-icons/fa';
 import { Badge, Space } from 'antd';
-import { useAuthContext } from '../../context/AuthContext';
 import OrderModal from '../OrderModel';
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import { useCartContext } from '../../context/CartContext';
 
 const Navbar = () => {
     const { cart } = useCartContext();
-    const { isAuth, handleLogout, user, isAdmin } = useAuthContext();
+    // const { isAuth, handleLogout, user, isAdmin } = useAuthContext();
     const [isModelOpen, setIsModelOpen] = useState(false);
 
     return (
@@ -87,10 +86,13 @@ const Navbar = () => {
                                     <li className="nav-item me-3">
                                         <Link to="/mens" className="nav-link active">Mens Wear</Link>
                                     </li>
+                                    <li className="nav-item me-3">
+                                        <Link to="/auth/login" className="btn fw-bold fs-5">Login</Link>
+                                    </li>
                                 </ul>
 
                                 {/* Auth & Dashboard */}
-                                {!isAuth ? (
+                                {/* {!isAuth ? (
                                     <Space>
                                         <Link to="/auth/login" className="btn fw-bold fs-5">Login</Link>
                                     </Space>
@@ -101,7 +103,7 @@ const Navbar = () => {
                                         )}
                                         <button className="btn fw-bold fs-5" onClick={handleLogout}>Logout</button>
                                     </Space>
-                                )}
+                                )} */}
                             </div>
 
                             <div className="d-flex align-items-center me-3">
